@@ -1,0 +1,242 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 82px;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ebecf2;
+}
+
+.portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+.underline {
+  height: 5px;
+  width: 60px;
+  background-color: #039dff;
+  margin: 0 auto;
+}
+
+.contact {
+  position: relative;
+  color: #fff;
+  background-image: url("/img/13.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 9, 27, 0.8);
+  z-index: -5;
+}
+.contact .h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact .contact-us {
+  display: flex;
+  align-items: center;
+}
+
+.shadow {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.aboutus-hover:hover {
+  color: #039dff;
+}
+
+.price-wrap .price-box {
+  transition: transform 0.3s;
+}
+.price-wrap .price-box:hover {
+  transform: scale(1.05);
+}
+
+.team {
+  position: relative;
+  background-image: url(/img/11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.team .team-shadow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+.team .card {
+  transition: transform 0.3s;
+}
+.team .card .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.team .card .card:hover {
+  transform: scale(0.95);
+}
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card:hover {
+  transform: scale(0.95);
+}
+
+nav {
+  text-transform: uppercase;
+  transition: background-color 0.5s;
+  z-index: 10;
+  width: 100%;
+}
+nav .nav-link, nav .navbar-brand {
+  color: #fff;
+}
+nav .nav-link:hover, nav .navbar-brand:hover {
+  color: #039dff;
+}
+nav .navbar-brand {
+  font-weight: bold;
+}
+nav .active {
+  color: #039dff;
+}
+nav .nav-link:active, nav .navbar-brand:active {
+  color: #039dff;
+}
+
+header {
+  color: white;
+}
+header .header-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  height: 100%;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+header .header-text .hero-text {
+  font-size: 28px;
+}
+header .header-text .hero-p {
+  font-size: 12px;
+}
+header .header-img {
+  position: relative;
+  background-image: url(/img/2.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header .header-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+header .header-scroll {
+  position: absolute;
+  text-decoration: none;
+  z-index: 10;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .header-scroll:hover {
+  color: #039dff;
+}
+
+.platforms .platform-image {
+  position: relative;
+  background-image: url(/img/3.jpg);
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.platforms .platform-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 1200px) {
+  header .header-img {
+    background-image: url(/img/1.jpg);
+  }
+  .platforms .platform-image {
+    background-image: url(/img/4.jpg);
+  }
+  .contact {
+    background-image: url("/img/12.jpg");
+  }
+}
+@media (min-width: 820px) {
+  header .header-text .hero-text {
+    font-size: 40px;
+  }
+  header .header-text .hero-p {
+    font-size: 15px;
+  }
+  .platforms .platform-image {
+    height: 60vh;
+  }
+}
+@media (min-width: 912px) {
+  nav {
+    height: 82px;
+  }
+  header .header-text .hero-text {
+    font-size: 50px;
+  }
+  header .header-text .hero-p {
+    font-size: 21px;
+  }
+}/*# sourceMappingURL=main.css.map */

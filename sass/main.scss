@@ -1,0 +1,261 @@
+@import 'colors'; 
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-padding-top: 82px;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+body{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $bg-color;
+}
+.portfolio{
+    .carousel-item{
+        position: relative;
+        height: 600px;
+    }
+    .carousel-caption{
+        position: absolute;
+        left:0;
+        right: 0;
+        padding: 40px 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .carousel-indicators{
+        padding-bottom: 20px;
+    }
+}
+.underline{
+    height: 5px;
+    width: 60px;
+    background-color: $blue-color;
+    margin: 0 auto;
+}
+.contact{
+    position: relative;
+    color: #fff;
+    background-image: url("/img/13.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    .contact-shadow{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,9,27, 0.8);
+        z-index: -5;
+    }
+    .h3{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .contact-us{
+        display: flex;
+        align-items: center;
+    }
+}
+.shadow{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+i{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.aboutus-hover:hover{
+    color: $blue-color;
+}    
+
+.price-wrap{
+    .price-box{
+        transition: transform .3s;
+    }
+    .price-box:hover{
+        transform: scale(1.05);
+    }
+}
+.team{
+    position: relative;
+    background-image: url(/img/11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    .team-shadow{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+    }
+    .card{
+        transition: transform .3s;
+        .card-title{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .card:hover{
+            transform: scale(.95);
+        }
+        img{
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    .card:hover{
+        transform: scale(.95);
+    }
+}
+nav{
+    text-transform: uppercase;
+    transition: background-color .5s;
+    z-index: 10;
+    width: 100%;
+    .nav-link, .navbar-brand{
+        color: $white;
+    }
+    .nav-link:hover, .navbar-brand:hover{
+        color:  $blue-color;
+    }
+    .navbar-brand{
+        font-weight: bold;
+    }
+    .active{
+        color: $blue-color;
+    }
+    .nav-link:active, .navbar-brand:active{
+        color:  $blue-color;
+    }
+}
+
+header{
+    color: white;
+    
+    .header-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        height: 100%;
+        flex-direction: column;
+        text-transform: uppercase;
+        .hero-text{
+            font-size: 28px;
+        }
+        .hero-p{
+            font-size: 12px;
+        }
+    }
+    .header-img{
+        position: relative;
+        background-image: url(/img/2.jpg);
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .header-shadow{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        
+    }
+    .header-scroll{
+        position: absolute;
+        text-decoration: none;
+        z-index: 10;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .header-scroll:hover{
+        color: $blue-color;
+    }
+}
+.platforms{
+    .platform-image{
+        position: relative;
+        background-image: url(/img/3.jpg);
+        height: 700px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .platform-shadow{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        
+    }
+}
+
+
+
+@media(min-width: 1200px){
+    header{
+        .header-img{
+            background-image: url(/img/1.jpg);
+        } 
+    }
+    .platforms{
+        .platform-image{
+            background-image: url(/img/4.jpg);
+        }
+    }
+    .contact{
+        background-image: url("/img/12.jpg");
+    }
+        
+}
+
+@media(min-width: 820px){
+    header{
+        .header-text{
+            .hero-text{
+                font-size: 40px;
+            }
+            .hero-p{
+                font-size: 15px;
+            }
+        } 
+    }
+    .platforms{
+        .platform-image{
+            height: 60vh;
+        }
+    }
+}
+
+@media(min-width: 912px){
+    nav{
+        height: 82px;
+    }
+    header{
+        .header-text{
+            .hero-text{
+                font-size: 50px;
+            }
+            .hero-p{
+                font-size: 21px;
+            }
+        } 
+    }
+}
+
